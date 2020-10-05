@@ -83,6 +83,10 @@ def pattern_to_regex(pattern):
     """
     Given a pattern, return a regex that will match the pattern
     """
+    if not pattern[0] == "^":
+        pattern = "^" + pattern
+    if not pattern[-1] == "$":
+        pattern = pattern + "$"
     return pattern.replace("*", ".*").replace("?", ".")
 
 
