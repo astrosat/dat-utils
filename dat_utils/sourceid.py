@@ -87,7 +87,7 @@ def pattern_to_regex(pattern):
         pattern = "^" + pattern
     if not pattern[-1] == "$":
         pattern = pattern + "$"
-    return pattern.replace(".", "\.").replace("*", ".*").replace("?", ".")
+    return pattern.replace("*", ".*").replace("?", ".")
 
 
 def source_id_parts_regexs(parts):
