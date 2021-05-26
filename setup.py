@@ -16,7 +16,7 @@ title = __import__("dat_utils").__title__
 version = __import__("dat_utils").__version__
 
 
-install_requires = ["pyjwt~=1.7.1"]
+install_requires = ["pyjwt~=2.1.0"]
 
 
 setup(
